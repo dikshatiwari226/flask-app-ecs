@@ -1,24 +1,21 @@
-# Base image (OS)
+# Get the base image (Full-size - 1.12 GB) 
 
-FROM python:3.14-slim
+FROM python:3.14
 
-# Working directory
+# Create a working directory to store all the files
 
 WORKDIR /app
 
-# Copy src code to container
+# Copy all the source code from he host to the container
 
 COPY . .
 
-# Run the build commands
+# Run the necessary commands required to install the application
 
 RUN pip install -r requirements.txt
 
-# expose port 80
+# Run the application
 
-EXPOSE 80
+CMD ["python", "run.py"]
 
-# serve the app / run the app (keep it running)
-
-CMD ["python","run.py"]
 
