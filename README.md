@@ -104,3 +104,6 @@ High-level steps to deploy this app on ECS:
 3. **Create ECS Service** — attach to a cluster, configure desired count, link to a load balancer
 
 4. **Configure ALB** — target group pointing to port 80, use `/health` as the health check path
+
+5. <img width="1919" height="968" alt="Screenshot 2026-06-01 190514" src="https://github.com/user-attachments/assets/5d708ecc-ca0e-4c39-902b-a8da351df216" />
+
